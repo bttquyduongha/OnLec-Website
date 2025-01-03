@@ -1,142 +1,507 @@
-@use "sass:color";
-
 .home {
-  padding-top: 64px;
+  overflow-x: hidden;
 }
 
-.hero {
-  background: linear-gradient(180deg, #fff 0%, #e6f7f1 100%);
-  padding: 4rem 0;
-  text-align: center;
+  .hero {
+    background-image: url("/assets/images/hero_bg-2-7.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 80px 0;
+    text-align: center;
+    color: #fff;
+
+    &__overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    &__content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
+
+      h1 {
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 24px;
+        line-height: 1.2;
+      }
+
+      p {
+        font-size: 18px;
+        color: #e0e0e0; // Màu chữ cho đoạn văn bản
+        margin-bottom: 32px;
+        line-height: 1.6;
+      }
+    }
+
+    &__video {
+      position: relative;
+      z-index: 2;
+      max-width: 1000px;
+      max-height:1000px;
+      margin: 48px auto;
+      padding: 0 20px;
+
+      iframe {
+        width: 100%;
+        height: 100%; // Tỷ lệ khung hình 16:9
+        border-radius: 8px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    &__icons {
+      display: flex;
+      justify-content: center;
+      gap: 100px;
+      margin-top: 200px;
+
+      .icon {
+        width: 48px;
+        height: 48px;
+        filter: invert(53%) sepia(98%) saturate(352%) hue-rotate(116deg) brightness(97%) contrast(87%);
+
+        img {
+          display: block;
+          max-width: 100%;
+          height: auto;
+          alt: none; // Bổ sung alt mặc định nếu cần
+        }
+      }
+    }
+  }
+.cta {
+  padding: 80px 0;
+  margin-left: 30px;
+  margin-right: 30px;
 
   &__content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 1rem;
-
-    h1 {
-      font-size: 2.5rem;
-      color: #333;
-      margin-bottom: 1.5rem;
-    }
-
-    p {
-      font-size: 1.1rem;
-      color: #666;
-      margin-bottom: 2rem;
-    }
-  }
-
-  &__video {
-    max-width: 1000px;
-    margin: 3rem auto 0;
-    padding: 0 1rem;
-
-    .video-placeholder {
-      background: #000;
-      width: 100%;
-      height: 0;
-      padding-bottom: 56.25%;
-      border-radius: 8px;
-    }
-  }
-}
-
-.features {
-  padding: 4rem 0;
-
-  &__grid {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-  }
-}
-
-.feature-card {
-  text-align: center;
-  padding: 2rem;
-
-  &__icon {
-    margin-bottom: 1rem;
-
-    img {
-      width: 48px;
-      height: 48px;
-    }
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
   }
 
-  h3 {
-    font-size: 1.1rem;
-    color: #333;
-    line-height: 1.4;
-  }
-}
-
-.cta {
-  background: #f8f9fa;
-  padding: 4rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 4rem 1rem;
-
-  &__content {
+  &__text {
     flex: 1;
-    padding-right: 4rem;
 
     h2 {
-      font-size: 2rem;
-      color: #333;
-      margin-bottom: 1.5rem;
+      font-size: 36px;
+      margin-bottom: 24px;
     }
 
     p {
       color: #666;
-      margin-bottom: 2rem;
+      line-height: 1.6;
+      margin-bottom: 32px;
     }
   }
 
   &__image {
     flex: 1;
+    img {
+      width: 80%;
+    }
+  }
+}
+
+.users {
+  background-color: rgb(214, 238, 222);
+  padding: 80px 0;
+  text-align: center;
+
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+
+    .text-gradient {
+        background: linear-gradient(to right, black, rgb(16, 188, 86)); // Gradient từ đen sang xanh lá
+        -webkit-background-clip: text; // Áp dụng background chỉ cho phần text
+        -webkit-text-fill-color: transparent; // Chuyển màu text thành trong suốt để hiển thị gradient
+        display: inline; // Đảm bảo chỉ áp dụng trên đoạn văn bản cụ thể
+    }
+  }
+
+  &__subtitle {
+    color: #666;
+    margin-bottom: 48px;
+  }
+
+  &__logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    flex-wrap: wrap;
 
     img {
-      width: 100%;
-      max-width: 500px;
+      height: 32px;
+      opacity: 0.7;
+      transition: opacity 0.3s;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.testimonial {
+  padding: 80px 0;
+  background: #f8f9fa;
+
+  &__content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+
+  &__image {
+    flex: 1;
+    img {
+      width: 70%;
+      border-radius: 16px;
+    }
+  }
+
+  &__text {
+    flex: 2;
+  }
+
+  &__quote {
+    font-size: 24px;
+    line-height: 1.6;
+    margin-bottom: 32px;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    img {
+      width: 80px;
+    }
+
+    h4 {
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+
+    p {
+      color: #666;
+    }
+  }
+}
+
+.home-container {
+  padding: 2rem;
+  background-color: #f5fbf7;
+  min-height: 100vh;
+
+  .header {
+    text-align: center;
+    margin-bottom: 4rem;
+
+    .title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #1a1a1a;
+    }
+  }
+
+  .content-wrapper {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .browser-window {
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 80%;
+    max-width: 680px;
+    margin: 0 auto;
+    border: 3px solid #000000;
+
+    .browser-header {
+      background: #2c2c2c;
+      padding: 8px;
+    }
+
+    .window-controls {
+      display: flex;
+      gap: 8px;
+
+      .control {
+        margin-top: 6px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+
+        &.close {
+          background: #ff5f56;
+        }
+
+        &.minimize {
+          background: #ffbd2e;
+        }
+
+        &.maximize {
+          background: #27c93f;
+        }
+      }
+    }
+
+    .tab-bar {
+      display: flex;
+      align-items: center;
+
+      .tab {
+        background: #3c3c3c;
+        border-radius: 4px 4px 0 0;
+        padding: 6px 12px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 12px;
+        color: #fff;
+
+        .tab-close {
+          opacity: 0.6;
+          cursor: pointer;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+
+      .new-tab {
+        color: #fff;
+        opacity: 0.6;
+        padding: 0 8px;
+        cursor: pointer;
+        font-size: 14px;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+
+    .address-bar {
+      display: flex;
+      gap: 8px;
+      background: #3c3c3c;
+      padding: 6px;
+      border-radius: 4px;
+
+      .navigation-controls {
+        display: flex;
+        gap: 4px;
+
+        .nav-button {
+          background: none;
+          border: none;
+          color: #fff;
+          opacity: 0.6;
+          cursor: pointer;
+          padding: 4px;
+          font-size: 12px;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+
+      .url-bar {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        color: #fff;
+        font-size: 12px;
+
+        .lock-icon {
+          opacity: 0.6;
+        }
+
+        .url {
+          opacity: 0.9;
+        }
+      }
+
+      .browser-actions {
+        display: flex;
+        gap: 4px;
+
+        .action-button {
+          background: none;
+          border: none;
+          color: #fff;
+          opacity: 0.6;
+          cursor: pointer;
+          padding: 4px;
+          font-size: 12px;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .browser-content {
+      .img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .right-content {
+    flex: 1;
+
+    .step-number {
+      font-size: 4rem;
+      font-weight: bold;
+      color: #676161;
+      border-color: #ff0000;
+      margin-bottom: 1rem;
+    }
+
+    .section-title {
+      font-size: 1.75rem;
+      font-weight: bold;
+      color: #1a1a1a;
+      margin-bottom: 1rem;
+    }
+
+    .description {
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    .step-indicators {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+
+      .step {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #e0e0e0;
+        color: #fff;
+
+        &.active {
+          background: #00c853;
+        }
+      }
+    }
+
+    .cta-button {
+      background: #1a1a1a;
+      color: #fff;
+      padding: 1rem 2rem;
+      border-radius: 4px;
+      border: none;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 0.2s;
+
+      &:hover {
+        background: #333;
+      }
     }
   }
 }
 
 .button {
+  padding: 16px 32px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: none;
+
   &--primary {
     background: #00b074;
     color: white;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 4px;
-    font-size: 1rem;
-    cursor: pointer;
 
     &:hover {
-      background: color.adjust(#00b074, $lightness: -5%);
+      background: darken(#00b074, 5%);
     }
   }
 
   &--dark {
-    background: #333;
+    background: #212529;
     color: white;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 4px;
-    font-size: 1rem;
-    cursor: pointer;
 
     &:hover {
-      background: color.adjust(#333, $lightness: -5%);
+      background: darken(#212529, 5%);
+    }
+  }
+
+  &--cta {
+    background: #1a1a1a;
+      color: #fff;
+      padding: 1rem 2rem;
+      border-radius: 30px;
+      border: none;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 0.2s;
+
+      &:hover {
+        background: #333;
+      }
+  }
+}
+
+.text-green {
+  color: #00b074;
+}
+
+@media (max-width: 768px) {
+  .how-to__content,
+  .testimonial__content,
+  .cta__content {
+    flex-direction: column;
+  }
+
+  .hero__content h1 {
+    font-size: 36px;
+  }
+
+  .users__logos {
+    gap: 24px;
+
+    img {
+      height: 24px;
     }
   }
 }
