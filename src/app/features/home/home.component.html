@@ -9,18 +9,42 @@
       <button class="button button--primary">Dùng thử miễn phí</button>
     </div>
     <div class="hero__video">
-      <iframe
-        src="https://www.youtube.com/watch?v=77Jso3XYnSk&ab_channel=V%C3%ACsaoth%E1%BA%BFnh%E1%BB%89%21"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-        title="Video giới thiệu về Onlec">
-      </iframe>
+      <div class="video-container">
+        <iframe
+          width="1024"
+          height="576"
+          src="https://www.youtube.com/embed/unmT_zSLcJ8?autoplay=1&mute=1"
+          title="[Kara Lyrics] Em Đừng Khóc - Chillies"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+
     </div>
     <div class="hero__icons">
-      <span class="icon"><img src="assets/images/icons/cup.svg" alt="Cup icon"></span>
-      <span class="icon"><img src="assets/images/icons/paper.svg" alt="Paper icon"></span>
-      <span class="icon"><img src="assets/images/icons/smile.svg" alt="Smile icon"></span>
+      <div class="icon-group">
+        <span class="icon"><img src="assets/images/icons/cup.svg" alt="Cup icon"></span>
+        <div class="icon-text">
+          <span>Miễn phí trọn đời <br> những tính năng cơ bản</span>
+          <div class="underline"></div>
+        </div>
+      </div>
+      <div class="icon-group">
+        <span class="icon"><img src="assets/images/icons/paper.svg" alt="Paper icon"></span>
+        <div class="icon-text">
+          <span>1000+ tài nguyên <br>hình ảnh, biểu tượng</span>
+          <div class="underline"></div>
+        </div>
+      </div>
+      <div class="icon-group">
+        <span class="icon"><img src="assets/images/icons/smile.svg" alt="Smile icon"></span>
+        <div class="icon-text">
+          <span>Thanh toán linh hoạt <br> bao gồm nhiều ưu đãi</span>
+          <div class="underline"></div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -64,7 +88,7 @@
         <p class="testimonial__quote">Dạy học không chỉ là truyền đạt kiến thức mà còn là tạo ra những trải nghiệm tương tác để học viên khám phá, và phát triển tư duy sáng tạo.</p>
         <div class="testimonial__author">
           <img src="assets/images/logos/nagakawa-small.svg" alt="Nagakawa">
-          <p>|</p>
+          <p class="vertical-line"></p>
           <div>
             <h4>Mr. Phạm Thành Công</h4>
             <p>Trưởng phòng đào tạo tập đoàn Nagakawa</p>

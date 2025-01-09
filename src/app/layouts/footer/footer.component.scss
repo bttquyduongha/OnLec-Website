@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
 .footer {
   background-color: #212529;
   color: #fff;
   padding: 40px 0;
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+
+  * {
+    font-family: inherit; // Áp dụng kế thừa font-family cho tất cả phần tử con
+  }
 
   .logo {
     margin-top: 60px;
-    font-weight: bold; // Chữ đậm
+    font-weight: bolder; // Chữ đậm
     font-family: 'Averta', sans-serif; // Font chữ
     font-size: 30px;
     display: flex;
@@ -48,7 +56,7 @@
   &__menu {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 60px;
+    gap: 40px;
     margin-left: 60px;
     margin-right: 60px;
     margin-bottom: 60px;
@@ -66,7 +74,7 @@
     h3 {
       color: #fff;
       font-size: 16px;
-      font-weight: 500;
+      font-weight: bolder;
       margin-bottom: 20px;
     }
 
@@ -98,23 +106,22 @@
 
     p {
       font-size: 24px;
-      font-weight: 500;
+      font-weight: bolder;
       margin-bottom: 20px;
     }
   }
 
   &__button {
-    background-color: #00b074;
+    background: linear-gradient(90deg, #10BC56 0%, #087334 100%);
     color: #fff;
-    border: none;
     padding: 12px 24px;
-    border-radius: 6px;
+    border-radius: 20px;
+    font-weight: bolder;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 
     &:hover {
-      background-color: darken(#00b074, 5%);
+      background: linear-gradient(90deg, darken(#10BC56, 5%) 0%, darken(#087334, 5%) 100%);
     }
   }
 
