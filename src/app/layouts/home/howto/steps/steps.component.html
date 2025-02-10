@@ -1,0 +1,32 @@
+<div class="swiper-container">
+  <swiper-container
+    navigation="true"
+    autoplay-delay="3000">
+    <swiper-slide *ngFor="let step of stepsContent.steps">
+      <div class="slide-content">
+        <img [src]="step.image.src" [alt]="step.image.alt" class="slide-image" />
+        <div class="slide-text">
+          <h1>{{ step.stepNumber }}</h1>
+          <h2>{{ step.title }}</h2>
+          <p>{{ step.description }}</p>
+        </div>
+      </div>
+    </swiper-slide>
+  </swiper-container>
+</div>
+
+<!-- Step indicators -->
+<div class="step-indicators">
+  <span
+    *ngFor="let step of stepsContent.stepIndicators; let i = index"
+    class="step"
+    [class.active]="i + 1 === activeStep"
+    (click)="setActiveStep(i + 1)">
+    {{ step }}
+  </span>
+</div>
+
+<div class = "button-container">
+  <button class="button">Bắt đầu ngay tại đây</button>
+</div>
+

@@ -4,21 +4,13 @@
       <div class="icon1">
         <img src="assets\images\Group.svg" alt="Logo" />
       </div>
-      <span class="on">On</span><span class="lec">lec</span>
+      <div class="logo-text">
+        <span class="on">On</span><span class="lec">lec</span>
+      </div>
     </a>
-    <nav class="nav-links">
-      <a href="#" class="nav-link">
-        Để làm gì?
-        <img src="assets/images/vector-25.svg" alt="Icon" class="nav-icon">
-      </a>
-      <a href="#" class="nav-link">
-        Tạo ra cái gì?
-        <img src="assets/images/vector-25.svg" alt="Icon" class="nav-icon">
-      </a>
-      <a href="#" class="nav-link">Chi phí bao nhiêu?</a>
-      <a href="#" class="nav-link">Mẫu có sẵn</a>
-      <a href="#" class="nav-link">Blog</a>
-    </nav>
+    <div class="nav-container">
+      <app-navlinks *ngFor="let navContent of navContentList" [navContent]="navContent"></app-navlinks>
+    </div>
     <div class="auth-buttons">
       <button class="register-button">Đăng ký</button>
       <button class="login-button">Đăng nhập</button>

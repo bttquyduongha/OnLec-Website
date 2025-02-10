@@ -1,0 +1,31 @@
+.home-container {
+  padding: 1%;
+  background-color: #dff0e5;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute; /* Đảm bảo có thể đặt ở giữa khung hình */
+    top: 20%;
+    left: 50%; /* Căn giữa theo chiều ngang */
+    transform: translateX(-50%); /* Căn chỉnh lại để phần tử thật sự ở giữa */
+    width: 80%; /* Kích thước chiều ngang */
+    height: 63%; /* Kích thước chiều dọc */
+    background-color: white; /* Màu nền trắng */
+    border-radius: 0 0 40% 40%; /* Bo tròn 2 góc trên */
+    z-index: -1; /* Đặt ở phía sau nội dung */
+  }
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+
+  .title {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #1a1a1a;
+  }
+}
+

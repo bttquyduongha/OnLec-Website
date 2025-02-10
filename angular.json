@@ -37,12 +37,10 @@
                 "output": "/assets"
               }
             ],
-            "styles": [
-              "src/styles/main.scss"
-            ],
             "stylePreprocessorOptions": {
               "includePaths": [
-                "src/styles"
+                "src/styles",
+                "node_modules/swiper/swiper-bundle.min.css"
               ]
             },
             "scripts": [],

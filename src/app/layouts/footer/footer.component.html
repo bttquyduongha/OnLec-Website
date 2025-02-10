@@ -9,53 +9,13 @@
           <span class="on">On</span><span class="lec">lec</span>
         </a>
       </div>
-      <div class="footer__menu-col">
-        <h3>Để làm gì?</h3>
-        <ul>
-          <li><a href="#">Business</a></li>
-          <li><a href="#">Schools</a></li>
-          <li><a href="#">University</a></li>
-          <li><a href="#">Customer stories</a></li>
-        </ul>
-      </div>
-
-      <div class="footer__menu-col">
-        <h3>Tạo ra cái gì?</h3>
-        <ul>
-          <li><a href="#">Business</a></li>
-          <li><a href="#">Schools</a></li>
-          <li><a href="#">University</a></li>
-          <li><a href="#">Customer stories</a></li>
-        </ul>
-      </div>
-
-      <div class="footer__menu-col">
-        <h3>Chi phí bao nhiêu?</h3>
-        <ul>
-          <li><a href="#">Business</a></li>
-          <li><a href="#">Schools</a></li>
-          <li><a href="#">University</a></li>
-          <li><a href="#">Customer stories</a></li>
-        </ul>
-      </div>
-
-      <div class="footer__menu-col">
-        <h3>Tương tác với chúng tôi</h3>
-        <ul>
-          <li><a href="#">Business</a></li>
-          <li><a href="#">Schools</a></li>
-          <li><a href="#">University</a></li>
-          <li><a href="#">Customer stories</a></li>
-        </ul>
-      </div>
+      <app-footer-navlinks *ngFor="let footernavContent of footernavContentList" [footernavContent]="footernavContent"></app-footer-navlinks>
     </div>
-
     <div class="footer__cta">
       <p>
         Hôm nay, bạn muốn sáng tạo điều gì ?
         <button class="footer__button">Bắt đầu ngay</button>
       </p>
-
     </div>
 
     <div class="footer__bottom">

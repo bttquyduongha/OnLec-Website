@@ -1,0 +1,27 @@
+.users {
+  background-color: rgb(214, 238, 222);
+  padding: 60px 0;
+  text-align: center;
+
+  h2 {
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 20px;
+
+    .text-gradient {
+      background: linear-gradient(to right, black, rgb(16, 188, 86));
+      -webkit-background-clip: text; // Thuộc tính với tiền tố -webkit- cho trình duyệt WebKit
+      background-clip: text;
+      -webkit-text-fill-color: transparent; // Màu text trong suốt để hiển thị gradient
+      display: inline; // Đảm bảo chỉ áp dụng trên đoạn văn bản cụ thể
+    }
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    font-weight: bolder;
+    color: #666;
+    margin-bottom: 48px;
+  }
+}

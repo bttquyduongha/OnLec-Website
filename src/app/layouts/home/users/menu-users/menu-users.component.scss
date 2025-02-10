@@ -1,0 +1,17 @@
+.users__logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  flex-wrap: wrap;
+
+  img {
+    height: 32px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

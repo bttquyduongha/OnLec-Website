@@ -1,0 +1,130 @@
+@use "sass:color";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+.home {
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+
+  * {
+    font-family: inherit;
+  }
+}
+
+.button {
+  padding: 16px 32px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: none;
+
+  &--primary {
+    background: linear-gradient(90deg, #10BC56 0%, #087334 100%);
+    color: white;
+
+    &:hover {
+      background: linear-gradient(90deg,
+      color.adjust(#10BC56, $lightness: 5%) 0%,
+      color.adjust(#087334, $lightness: 5%) 100%);
+    }
+  }
+
+  &--dark {
+    background: #212529;
+    color: white;
+
+    &:hover {
+      background: color.adjust(#212529, $lightness: -5%);
+    }
+  }
+}
+
+.text-green {
+  color: #00b074;
+}
+
+/* Responsive styles */
+
+/* Điện thoại (<576px) */
+@media (max-width: 575.98px) {
+  .home {
+  }
+
+  .hero__content h1 {
+  }
+
+  .button {
+  }
+
+  .users__logos img {
+  }
+}
+
+/* Tablet (576px - 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .home {
+  }
+
+  .hero__content h1 {
+  }
+
+  .how-to__content,
+  .testimonial__content,
+  .cta__content {
+  }
+
+  .users__logos img {
+  }
+}
+
+/* Laptop (768px - 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .home {
+  }
+
+  .hero__content h1 {
+  }
+
+  .how-to__content,
+  .testimonial__content,
+  .cta__content {
+  }
+
+  .users__logos img {
+  }
+}
+
+/* Desktop (992px - 1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .home {
+  }
+
+  .hero__content h1 {
+  }
+
+  .how-to__content,
+  .testimonial__content,
+  .cta__content {
+  }
+
+  .users__logos img {
+  }
+}
+
+/* Desktop lớn (>1200px) */
+@media (min-width: 1200px) {
+  .home {
+  }
+
+  .hero__content h1 {
+  }
+
+  .how-to__content,
+  .testimonial__content,
+  .cta__content {
+  }
+
+  .users__logos img {
+  }
+}

@@ -1,0 +1,25 @@
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero__overlay"></div>
+  <div class="hero__content">
+    <h1>Biến mỗi bài giảng<br>thành một câu chuyện hấp dẫn!</h1>
+    <p>Xây dựng những bài giảng tương tác dễ dàng với Onlec.<br>
+       Hãy cùng tạo ra những trải nghiệm thú vị cho khán giả của bạn.</p>
+    <button class="button button--primary">Dùng thử miễn phí</button>
+  </div>
+  <div class="hero__video">
+    <div class="video-container">
+      <iframe
+        width="1024"
+        height="576"
+        src="https://www.youtube.com/embed/unmT_zSLcJ8?autoplay=1&mute=1"
+        title="[Kara Lyrics] Em Đừng Khóc - Chillies"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+  <app-menu-hero *ngFor="let menuContent of menuContentList" [menuContent]="menuContent"></app-menu-hero>
+</section>

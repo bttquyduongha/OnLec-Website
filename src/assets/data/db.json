@@ -1,0 +1,193 @@
+{
+  "navlinks": [
+    {
+      "id": 1,
+      "text": "Để làm gì?",
+      "path": "#",
+      "icon": "assets/images/vector-25.svg",
+      "children": [
+        {
+          "id": 1.1,
+          "text": "Nội dung 1",
+          "path": "/content-1",
+          "icon": null
+        },
+        {
+          "id": 1.2,
+          "text": "Nội dung 2",
+          "path": "/content-2",
+          "icon": null
+        },
+        {
+          "id": 1.3,
+          "text": "Nội dung 3",
+          "path": "/content-3",
+          "icon": null
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Tạo ra cái gì?",
+      "path": "#",
+      "icon": "assets/images/vector-25.svg",
+      "children": [
+        {
+          "id": 2.1,
+          "text": "Nội dung 1",
+          "path": "/content-1",
+          "icon": null
+        },
+        {
+          "id": 2.2,
+          "text": "Nội dung 2",
+          "path": "/content-2",
+          "icon": null
+        },
+        {
+          "id": 2.3,
+          "text": "Nội dung 3",
+          "path": "/content-3",
+          "icon": null
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Chi phí bao nhiêu?",
+      "path": "#",
+      "icon": null,
+      "children": null
+    },
+    {
+      "id": 4,
+      "text": "Mẫu có sẵn",
+      "path": "#",
+      "icon": null,
+      "children": null
+    },
+    {
+      "id": 5,
+      "text": "Blog",
+      "path": "/blog",
+      "icon": null,
+      "children": null
+    }
+  ],
+
+  "footer-navlinks":[
+    {
+      "id": 1,
+      "title": "Để làm gì?",
+      "items": [
+        { "text": "Business", "link": "#" },
+        { "text": "Schools", "link": "#" },
+        { "text": "University", "link": "#" },
+        { "text": "Customer stories", "link": "#" }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Tạo ra cái gì?",
+      "items": [
+        { "text": "Business", "link": "#" },
+        { "text": "Schools", "link": "#" },
+        { "text": "University", "link": "#" },
+        { "text": "Customer stories", "link": "#" }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Chi phí bao nhiêu?",
+      "items": [
+        { "text": "Business", "link": "#" },
+        { "text": "Schools", "link": "#" },
+        { "text": "University", "link": "#" },
+        { "text": "Customer stories", "link": "#" }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Tương tác với chúng tôi",
+      "items": [
+        { "text": "Business", "link": "#" },
+        { "text": "Schools", "link": "#" },
+        { "text": "University", "link": "#" },
+        { "text": "Customer stories", "link": "#" }
+      ]
+    }
+  ],
+
+  "hero": [
+    {
+      "icons": [
+        {
+          "iconSrc": "assets/images/icons/cup.svg",
+          "iconAlt": "Cup icon",
+          "text": "Miễn phí trọn đời <br> những tính năng cơ bản"
+        },
+        {
+          "iconSrc": "assets/images/icons/paper.svg",
+          "iconAlt": "Paper icon",
+          "text": "1000+ tài nguyên <br> hình ảnh, biểu tượng"
+        },
+        {
+          "iconSrc": "assets/images/icons/smile.svg",
+          "iconAlt": "Smile icon",
+          "text": "Thanh toán linh hoạt <br> bao gồm nhiều ưu đãi"
+        }
+      ]
+    }
+  ],
+
+  "users": [
+    {
+      "logos": [
+        { "src": "assets/images/logos/nagakawa.svg", "alt": "Nagakawa" },
+        { "src": "assets/images/logos/spotify.svg", "alt": "Spotify" },
+        { "src": "assets/images/logos/stripe.svg", "alt": "Stripe" },
+        { "src": "assets/images/logos/walmart.svg", "alt": "Walmart" },
+        { "src": "assets/images/logos/airbnb.svg", "alt": "Airbnb" },
+        { "src": "assets/images/logos/amazon.svg", "alt": "Amazon" }
+      ]
+    }
+  ],
+
+  "how-to":[
+    {
+      "steps": [
+        {
+          "stepNumber": "01",
+          "title": "Chuẩn bị nội dung và hình thành ý tưởng của bạn",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+          "image": {
+            "src": "assets/images/Board 1.png",
+            "alt": "Onlec Editor Interface"
+          }
+        },
+        {
+          "stepNumber": "02",
+          "title": "Thiết kế và chỉnh sửa nội dung trực quan",
+          "description": "Lorem Ipsum has been used as a placeholder text for visual design and layout creation, offering a clean and organized approach.",
+          "image": {
+            "src": "assets/images/Board 2.png",
+            "alt": "Visual Design Interface"
+          }
+        },
+        {
+          "stepNumber": "03",
+          "title": "Xuất bản nội dung và chia sẻ ý tưởng của bạn",
+          "description": "Share your finalized content effortlessly through multiple platforms with industry-standard publishing tools.",
+          "image": {
+            "src": "assets/images/Board 3.png",
+            "alt": "Publishing Tools Interface"
+          }
+        }
+      ],
+
+      "stepIndicators": [1, 2, 3]
+    }
+  ]
+}
+
+

@@ -1,0 +1,31 @@
+.footer-nav {
+  display: flex; /* Hiển thị các cột ngang hàng */
+  justify-content: space-between; /* Chia đều khoảng cách giữa các cột */
+  gap: 20px; /* Khoảng cách giữa các cột */
+  padding: 20px;
+  background-color: #1d1f24; /* Màu nền */
+
+  .footer-nav-link {
+    flex: 1; /* Đảm bảo các cột có kích thước bằng nhau */
+    color: #ffffff;
+    column-gap: 30px;
+
+    .content {
+      list-style: none; /* Bỏ dấu chấm đầu dòng */
+      padding: 0;
+
+      .item {
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 8px;
+        color: #ffffff;
+        text-decoration: none;
+        display: block; /* Đảm bảo mỗi item hiển thị trên 1 dòng */
+
+        &:hover {
+          color: #f0f0f0; /* Màu chữ khi hover */
+        }
+      }
+    }
+  }
+}

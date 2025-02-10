@@ -1,9 +1,18 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './features/home/home.component';
-import { HeaderComponent } from './layouts/header/header.component';
-import { FooterComponent } from './layouts/footer/footer.component';
+import { HomeComponent } from './layouts/home/home.component';
+import { BlogComponent } from './features/blog/blog.component';
 
-export const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' }, // Redirect từ root (/) đến /home
-  { path: 'home', component: HomeComponent }, // Đường dẫn đến HomeComponent
-];
+const routeConfig: Routes = [
+  {
+    path: '',
+    component: HomeComponent,
+    title: 'Home Page'
+  },
+  {
+    path: 'blog',
+    component: BlogComponent,
+    title: 'Blog Page'
+  }
+]
+
+export default routeConfig;

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+$font-family-montserrat: 'Montserrat', sans-serif;
+.test {
+  color: green;
+}
+.nav-link {
+  font-family: $font-family-montserrat;
+  color: #1d1f24;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 9999;
+    width: max-content; // Điều chỉnh kích thước dropdown nếu cần
+  }
+
+  &:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-item {
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+    color: #1d1f24; // Màu chữ mặc định
+  }
+
+  .dropdown-item:hover {
+    background-color: #f1f1f1;
+  }
+
+  /* Responsive styles */
+
+  /* Điện thoại (<576px) */
+  @media (max-width: 575.98px) {
+
+    .dropdown-content {
+      position: static; // Đặt dropdown dưới dạng khối
+      display: none;
+      padding: 0;
+      background-color: transparent;
+    }
+
+    .nav-link:hover .dropdown-content {
+      display: block; // Hiển thị dropdown khi hover
+    }
+
+    .dropdown-item {
+      padding: 12px 16px;
+      font-size: 14px;
+      text-align: center; // Căn giữa item trong dropdown
+    }
+  }
+
+
+  /* Tablet (576px - 768px) */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 12px; // Điều chỉnh kích thước chữ vừa phải
+    .dropdown-content {
+      width: 200px; // Điều chỉnh chiều rộng dropdown
+      padding: 5px 10px;
+
+      .dropdown-item {
+        font-size: 14px;
+      }
+    }
+  }
+
+  /* Laptop nhỏ (768px - 992px) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+
+    .dropdown-content {
+      width: 220px;
+      padding: 10px;
+
+      .dropdown-item {
+        font-size: 15px;
+      }
+    }
+  }
+
+  /* Desktop (>1200px) */
+  @media (min-width: 1200px) {
+    font-size: 18px;
+
+    .dropdown-content {
+      width: 250px;
+
+      .dropdown-item {
+        font-size: 16px;
+      }
+    }
+  }
+}
